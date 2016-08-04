@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D32909D1BFBE9E2002725A0 /* tvOS-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D32909D1BFBE9E2002725A0 /* tvOS-SDK-Demo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-SDK-Demo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3290A01BFBE9E2002725A0 /* ALDemoAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALDemoAppDelegate.swift; sourceTree = "<group>"; };
 		1D3290A91BFBE9E2002725A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3290B41BFBEA60002725A0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -80,7 +80,7 @@
 		1D32909E1BFBE9E2002725A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D32909D1BFBE9E2002725A0 /* tvOS-SDK-Demo.app */,
+				1D32909D1BFBE9E2002725A0 /* tvOS-SDK-Demo-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D32909C1BFBE9E2002725A0 /* tvOS-SDK-Demo */ = {
+		1D32909C1BFBE9E2002725A0 /* tvOS-SDK-Demo-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D3290AC1BFBE9E2002725A0 /* Build configuration list for PBXNativeTarget "tvOS-SDK-Demo" */;
+			buildConfigurationList = 1D3290AC1BFBE9E2002725A0 /* Build configuration list for PBXNativeTarget "tvOS-SDK-Demo-Swift" */;
 			buildPhases = (
 				1D3290991BFBE9E2002725A0 /* Sources */,
 				1D32909A1BFBE9E2002725A0 /* Frameworks */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = "tvOS-SDK-Demo";
+			name = "tvOS-SDK-Demo-Swift";
 			productName = "tvOS-SDK-Demo";
-			productReference = 1D32909D1BFBE9E2002725A0 /* tvOS-SDK-Demo.app */;
+			productReference = 1D32909D1BFBE9E2002725A0 /* tvOS-SDK-Demo-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1D3290981BFBE9E2002725A0 /* Build configuration list for PBXProject "tvOS-SDK-Demo" */;
+			buildConfigurationList = 1D3290981BFBE9E2002725A0 /* Build configuration list for PBXProject "tvOS-SDK-Demo-Swift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -240,7 +240,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D32909C1BFBE9E2002725A0 /* tvOS-SDK-Demo */,
+				1D32909C1BFBE9E2002725A0 /* tvOS-SDK-Demo-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -370,7 +370,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "tvOS-SDK-Demo-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-SDK-Demo/tvOS-SDK-Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -391,7 +391,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "tvOS-SDK-Demo-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "tvOS-SDK-Demo/tvOS-SDK-Demo-Bridging-Header.h";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D3290981BFBE9E2002725A0 /* Build configuration list for PBXProject "tvOS-SDK-Demo" */ = {
+		1D3290981BFBE9E2002725A0 /* Build configuration list for PBXProject "tvOS-SDK-Demo-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D3290AA1BFBE9E2002725A0 /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D3290AC1BFBE9E2002725A0 /* Build configuration list for PBXNativeTarget "tvOS-SDK-Demo" */ = {
+		1D3290AC1BFBE9E2002725A0 /* Build configuration list for PBXNativeTarget "tvOS-SDK-Demo-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D3290AD1BFBE9E2002725A0 /* Debug */,
