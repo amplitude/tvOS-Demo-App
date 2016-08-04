@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5848F61D53F1D700510BEC /* libAppLovinTVOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5848F51D53F1D700510BEC /* libAppLovinTVOS.a */; };
 		1D6DA1381BFBF6B600E71464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6DA1371BFBF6B600E71464 /* Assets.xcassets */; };
 		1DC418671BFBD7CD009B7171 /* ALDemoRewardedVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC418661BFBD7CD009B7171 /* ALDemoRewardedVideosViewController.m */; };
 		E940351B1BF6890B00966A1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E940351A1BF6890B00966A1C /* main.m */; };
@@ -27,6 +28,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5848DB1D53F1D700510BEC /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
+		1D5848DC1D53F1D700510BEC /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
+		1D5848DD1D53F1D700510BEC /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
+		1D5848DE1D53F1D700510BEC /* ALAdRewardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdRewardDelegate.h; sourceTree = "<group>"; };
+		1D5848DF1D53F1D700510BEC /* ALAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
+		1D5848E01D53F1D700510BEC /* ALAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
+		1D5848E11D53F1D700510BEC /* ALAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdType.h; sourceTree = "<group>"; };
+		1D5848E21D53F1D700510BEC /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
+		1D5848E31D53F1D700510BEC /* ALAdVideoPlaybackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdVideoPlaybackDelegate.h; sourceTree = "<group>"; };
+		1D5848E41D53F1D700510BEC /* ALAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
+		1D5848E51D53F1D700510BEC /* ALAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAnnotations.h; sourceTree = "<group>"; };
+		1D5848E61D53F1D700510BEC /* ALErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALErrorCodes.h; sourceTree = "<group>"; };
+		1D5848E71D53F1D700510BEC /* ALEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventService.h; sourceTree = "<group>"; };
+		1D5848E81D53F1D700510BEC /* ALEventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventTypes.h; sourceTree = "<group>"; };
+		1D5848E91D53F1D700510BEC /* ALIncentivizedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIncentivizedInterstitialAd.h; sourceTree = "<group>"; };
+		1D5848EA1D53F1D700510BEC /* ALInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
+		1D5848EB1D53F1D700510BEC /* ALNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAd.h; sourceTree = "<group>"; };
+		1D5848EC1D53F1D700510BEC /* ALNativeAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdLoadDelegate.h; sourceTree = "<group>"; };
+		1D5848ED1D53F1D700510BEC /* ALNativeAdPrecacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdPrecacheDelegate.h; sourceTree = "<group>"; };
+		1D5848EE1D53F1D700510BEC /* ALNativeAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdService.h; sourceTree = "<group>"; };
+		1D5848EF1D53F1D700510BEC /* ALPostbackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackDelegate.h; sourceTree = "<group>"; };
+		1D5848F01D53F1D700510BEC /* ALPostbackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackService.h; sourceTree = "<group>"; };
+		1D5848F11D53F1D700510BEC /* ALSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
+		1D5848F21D53F1D700510BEC /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
+		1D5848F31D53F1D700510BEC /* ALSwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSwiftHeaders.h; sourceTree = "<group>"; };
+		1D5848F41D53F1D700510BEC /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
+		1D5848F51D53F1D700510BEC /* libAppLovinTVOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinTVOS.a; sourceTree = "<group>"; };
 		1D6DA1371BFBF6B600E71464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DC418651BFBD7CD009B7171 /* ALDemoRewardedVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRewardedVideosViewController.h; sourceTree = "<group>"; };
 		1DC418661BFBD7CD009B7171 /* ALDemoRewardedVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoRewardedVideosViewController.m; sourceTree = "<group>"; };
@@ -67,6 +95,7 @@
 				E940355A1BF6A6EE00966A1C /* AVFoundation.framework in Frameworks */,
 				E940355B1BF6A6EE00966A1C /* CoreGraphics.framework in Frameworks */,
 				E940355C1BF6A6EE00966A1C /* CoreMedia.framework in Frameworks */,
+				1D5848F61D53F1D700510BEC /* libAppLovinTVOS.a in Frameworks */,
 				E940355F1BF6A6EE00966A1C /* StoreKit.framework in Frameworks */,
 				E94035601BF6A6EE00966A1C /* SystemConfiguration.framework in Frameworks */,
 				E94035611BF6A6EE00966A1C /* UIKit.framework in Frameworks */,
@@ -76,6 +105,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5848DA1D53F1D700510BEC /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				1D5848DB1D53F1D700510BEC /* ALAd.h */,
+				1D5848DC1D53F1D700510BEC /* ALAdDisplayDelegate.h */,
+				1D5848DD1D53F1D700510BEC /* ALAdLoadDelegate.h */,
+				1D5848DE1D53F1D700510BEC /* ALAdRewardDelegate.h */,
+				1D5848DF1D53F1D700510BEC /* ALAdService.h */,
+				1D5848E01D53F1D700510BEC /* ALAdSize.h */,
+				1D5848E11D53F1D700510BEC /* ALAdType.h */,
+				1D5848E21D53F1D700510BEC /* ALAdUpdateDelegate.h */,
+				1D5848E31D53F1D700510BEC /* ALAdVideoPlaybackDelegate.h */,
+				1D5848E41D53F1D700510BEC /* ALAdView.h */,
+				1D5848E51D53F1D700510BEC /* ALAnnotations.h */,
+				1D5848E61D53F1D700510BEC /* ALErrorCodes.h */,
+				1D5848E71D53F1D700510BEC /* ALEventService.h */,
+				1D5848E81D53F1D700510BEC /* ALEventTypes.h */,
+				1D5848E91D53F1D700510BEC /* ALIncentivizedInterstitialAd.h */,
+				1D5848EA1D53F1D700510BEC /* ALInterstitialAd.h */,
+				1D5848EB1D53F1D700510BEC /* ALNativeAd.h */,
+				1D5848EC1D53F1D700510BEC /* ALNativeAdLoadDelegate.h */,
+				1D5848ED1D53F1D700510BEC /* ALNativeAdPrecacheDelegate.h */,
+				1D5848EE1D53F1D700510BEC /* ALNativeAdService.h */,
+				1D5848EF1D53F1D700510BEC /* ALPostbackDelegate.h */,
+				1D5848F01D53F1D700510BEC /* ALPostbackService.h */,
+				1D5848F11D53F1D700510BEC /* ALSdk.h */,
+				1D5848F21D53F1D700510BEC /* ALSdkSettings.h */,
+				1D5848F31D53F1D700510BEC /* ALSwiftHeaders.h */,
+				1D5848F41D53F1D700510BEC /* ALTargetingData.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
 		1DC418631BFBD7B3009B7171 /* Interstitials */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +177,7 @@
 		E94035181BF6890B00966A1C /* tvOS-SDK-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				E940352D1BF6891100966A1C /* PUT SDK HERE */,
+				E940352D1BF6891100966A1C /* AppLovin SDK 3.2 */,
 				E940352F1BF68A3700966A1C /* SDK Integration Examples */,
 				E940352E1BF689C100966A1C /* Components */,
 				E94035191BF6890B00966A1C /* Supporting Files */,
@@ -134,11 +196,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E940352D1BF6891100966A1C /* PUT SDK HERE */ = {
+		E940352D1BF6891100966A1C /* AppLovin SDK 3.2 */ = {
 			isa = PBXGroup;
 			children = (
+				1D5848DA1D53F1D700510BEC /* headers */,
+				1D5848F51D53F1D700510BEC /* libAppLovinTVOS.a */,
 			);
-			name = "PUT SDK HERE";
+			name = "AppLovin SDK 3.2";
 			sourceTree = "<group>";
 		};
 		E940352E1BF689C100966A1C /* Components */ = {
