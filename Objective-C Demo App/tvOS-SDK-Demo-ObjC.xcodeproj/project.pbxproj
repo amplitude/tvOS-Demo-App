@@ -458,7 +458,7 @@
 					"$(PROJECT_DIR)/tvOS-SDK-Demo",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.apps.demoapp;
 				PRODUCT_NAME = "tvOS-SDK-Demo-ObjC";
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -478,7 +478,7 @@
 					"$(PROJECT_DIR)/tvOS-SDK-Demo",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.apps.demoapp;
 				PRODUCT_NAME = "tvOS-SDK-Demo-ObjC";
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
