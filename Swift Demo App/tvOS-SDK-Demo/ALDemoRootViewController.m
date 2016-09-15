@@ -27,6 +27,24 @@
     [self addFooterLabel];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear: animated];
+    
+    NSString *sdkKey = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"AppLovinSdkKey"];
+    if ( [sdkKey isEqualToString: @"YOUR_SDK_KEY"] )
+    {
+        NSString *title = @"ERROR";
+        NSString *message = @"Please update the `AppLovinSdkKey` row in your Info.plist file with your SDK key.";
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle: title
+                                                                       message: message
+                                                                preferredStyle: UIAlertControllerStyleAlert];
+        [alert addAction: [UIAlertAction actionWithTitle: @"OK" style: UIAlertActionStyleDefault handler: nil]];
+        
+        [self presentViewController: alert animated: YES completion: nil];
+    }
+}
+
 - (void)addFooterLabel
 {
     UILabel *footer = [[UILabel alloc] init];
