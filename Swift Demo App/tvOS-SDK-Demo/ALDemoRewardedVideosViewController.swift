@@ -13,7 +13,7 @@ import UIKit
 //
 class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDelegate, ALAdRewardDelegate, ALAdDisplayDelegate, ALAdVideoPlaybackDelegate
 {
-    @IBAction func showRewardedVideo(sender: AnyObject!)
+    @IBAction func showRewardedVideo(_ sender: AnyObject!)
     {
         // Unlike interstitials, you need to preload each rewarded video before it can be displayed.
         if ALIncentivizedInterstitialAd.isReadyForDisplay()
@@ -32,7 +32,7 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
     }
     
     // Unlike interstitials, you need to preload each rewarded video before it can be displayed.
-    @IBAction func preloadRewardedVideo(sender: AnyObject!)
+    @IBAction func preloadRewardedVideo(_ sender: AnyObject!)
     {
         self.log("Preloading...")
         ALIncentivizedInterstitialAd.shared().preloadAndNotify(self)
@@ -40,15 +40,15 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
     
     // MARK: Ad Load Delegate
     
-    func adService(adService: ALAdService, didLoadAd ad: ALAd)
+    func adService(_ adService: ALAdService, didLoad ad: ALAd)
     {
         self.log("Rewarded Video Loaded")
         
-        self.showButton.enabled = true
+        self.showButton.isEnabled = true
         self.requestedFocusView = self.showButton
     }
     
-    func adService(adService: ALAdService, didFailToLoadAdWithError code: Int32)
+    func adService(_ adService: ALAdService, didFailToLoadAdWithError code: Int32)
     {
         // Look at ALErrorCodes.h for list of error codes
         self.log("Rewarded video failed to load with error code \(code)")
@@ -56,7 +56,7 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
     
     // MARK: Ad Reward Delegate
     
-    func rewardValidationRequestForAd(ad: ALAd, didSucceedWithResponse response: [NSObject : AnyObject])
+    func rewardValidationRequest(for ad: ALAd, didSucceedWithResponse response: [AnyHashable: Any])
     {
         /* AppLovin servers validated the reward. Refresh user balance from your server.  We will also pass the number of coins
         awarded and the name of the currency.  However, ideally, you should verify this with your server before granting it. */
@@ -79,7 +79,7 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
         // If you don't want this, you can turn it off in the Manage Apps UI.
     }
     
-    func rewardValidationRequestForAd(ad: ALAd, didFailWithError responseCode: Int)
+    func rewardValidationRequest(for ad: ALAd, didFailWithError responseCode: Int)
     {
         if responseCode == Int(kALErrorCodeIncentivizedUserClosedVideo)
         {
@@ -100,14 +100,14 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
         }
     }
     
-    func rewardValidationRequestForAd(ad: ALAd, didExceedQuotaWithResponse response: [NSObject : AnyObject])
+    func rewardValidationRequest(for ad: ALAd, didExceedQuotaWithResponse response: [AnyHashable: Any])
     {
         // Your user has already earned the max amount you allowed for the day at this point, so
         // don't give them any more money. By default we'll show them a UIAlertView explaining this,
         // though you can change that from the Manage Apps UI.
     }
     
-    func rewardValidationRequestForAd(ad: ALAd, wasRejectedWithResponse response: [NSObject : AnyObject])
+    func rewardValidationRequest(for ad: ALAd, wasRejectedWithResponse response: [AnyHashable: Any])
     {
         // Your user couldn't be granted a reward for this view. This could happen if you've blacklisted
         // them, for example. Don't grant them any currency. By default we'll show them a UIAlertView explaining this,
@@ -116,29 +116,29 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
     
     // MARK: Ad Display Delegate
     
-    func ad(ad: ALAd, wasDisplayedIn view: UIView)
+    func ad(_ ad: ALAd, wasDisplayedIn view: UIView)
     {
         self.log("Ad Displayed")
     }
     
-    func ad(ad: ALAd, wasHiddenIn view: UIView)
+    func ad(_ ad: ALAd, wasHiddenIn view: UIView)
     {
         self.log("Ad Dismissed")
     }
     
-    func ad(ad: ALAd, wasClickedIn view: UIView)
+    func ad(_ ad: ALAd, wasClickedIn view: UIView)
     {
         self.log("Ad Clicked")
     }
     
     // MARK: Ad Video Playback Delegate
     
-    func videoPlaybackBeganInAd(ad: ALAd)
+    func videoPlaybackBegan(in ad: ALAd)
     {
         self.log("Video Started")
     }
     
-    func videoPlaybackEndedInAd(ad: ALAd, atPlaybackPercent percentPlayed: NSNumber, fullyWatched wasFullyWatched: Bool)
+    func videoPlaybackEnded(in ad: ALAd, atPlaybackPercent percentPlayed: NSNumber, fullyWatched wasFullyWatched: Bool)
     {
         self.log("Video Ended")
     }

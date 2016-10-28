@@ -69,7 +69,8 @@
  */
 -(void)removeAdUpdateObserver: (alnonnull id<ALAdUpdateObserver>) adListener ofSize: (alnonnull ALAdSize *) adSize;
 
-- (alnullable id)init __attribute__((unavailable("Don't instantiate ALAdService, access one via [sdk adService] instead.")));
+- (alnonnull id)init __attribute__((unavailable("Don't instantiate ALAdService, access one via [sdk adService] instead.")));
+
 @end
 
 /**

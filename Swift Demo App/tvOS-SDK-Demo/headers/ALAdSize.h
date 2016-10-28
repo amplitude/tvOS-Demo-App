@@ -84,5 +84,6 @@
 @property (assign, nonatomic) NSUInteger height __deprecated;
 
 +(alnonnull ALAdSize*) sizeWithLabel: (alnonnull NSString*) label orDefault: (alnonnull ALAdSize*) defaultSize __deprecated_msg("Custom ad sizes are no longer supported; use an existing singleton size like [ALAdSize sizeBanner]");
-- (alnullable id)init __attribute__((unavailable("Do not alloc-init your own instances; use an existing singleton size like [ALAdSize sizeBanner]")));
+- (alnonnull id)init __attribute__((unavailable("Do not alloc-init your own instances; use an existing singleton size like [ALAdSize sizeBanner]")));
+
 @end

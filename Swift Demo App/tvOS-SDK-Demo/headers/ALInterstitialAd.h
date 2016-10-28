@@ -158,5 +158,6 @@
  */
 @property (assign, nonatomic) BOOL hidden;
 
-- (alnullable id) init __attribute__((unavailable("Use [ALInterstitialAd shared] or initInterstitialAdWithSdk: instead.")));
+- (alnonnull id) init __attribute__((unavailable("Use [ALInterstitialAd shared] or initInterstitialAdWithSdk: instead.")));
+
 @end

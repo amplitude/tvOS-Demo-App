@@ -12,7 +12,7 @@ class ALDemoInterstitialSingleInstanceViewController: ALDemoBaseViewController, 
 {
     var interstitial: ALInterstitialAd?
     
-    @IBAction func showInterstitial(sender: AnyObject!)
+    @IBAction func showInterstitial(_ sender: AnyObject!)
     {
         if ALInterstitialAd.isReadyForDisplay()
         {
@@ -38,12 +38,12 @@ class ALDemoInterstitialSingleInstanceViewController: ALDemoBaseViewController, 
     
     // MARK: Ad Load Delegate
     
-    func adService(adService: ALAdService, didLoadAd ad: ALAd)
+    func adService(_ adService: ALAdService, didLoad ad: ALAd)
     {
         self.log("Interstitial Loaded")
     }
     
-    func adService(adService: ALAdService, didFailToLoadAdWithError code: Int32)
+    func adService(_ adService: ALAdService, didFailToLoadAdWithError code: Int32)
     {
         // Look at ALErrorCodes.h for list of error codes
         self.log("Interstitial failed to load with error code \(code)")
@@ -51,29 +51,29 @@ class ALDemoInterstitialSingleInstanceViewController: ALDemoBaseViewController, 
     
     // MARK: Ad Display Delegate
     
-    func ad(ad: ALAd, wasDisplayedIn view: UIView)
+    func ad(_ ad: ALAd, wasDisplayedIn view: UIView)
     {
         self.log("Interstitial Displayed")
     }
     
-    func ad(ad: ALAd, wasHiddenIn view: UIView)
+    func ad(_ ad: ALAd, wasHiddenIn view: UIView)
     {
         self.log("Interstitial Dismissed")
     }
     
-    func ad(ad: ALAd, wasClickedIn view: UIView)
+    func ad(_ ad: ALAd, wasClickedIn view: UIView)
     {
         self.log("Interstitial Clicked")
     }
     
     // MARK: Ad Video Playback Delegate
     
-    func videoPlaybackBeganInAd(ad: ALAd)
+    func videoPlaybackBegan(in ad: ALAd)
     {
         self.log("Video Started")
     }
     
-    func videoPlaybackEndedInAd(ad: ALAd, atPlaybackPercent percentPlayed: NSNumber, fullyWatched wasFullyWatched: Bool)
+    func videoPlaybackEnded(in ad: ALAd, atPlaybackPercent percentPlayed: NSNumber, fullyWatched wasFullyWatched: Bool)
     {
         self.log("Video Ended")
     }

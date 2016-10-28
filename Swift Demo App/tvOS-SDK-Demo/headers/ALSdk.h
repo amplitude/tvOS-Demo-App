@@ -159,6 +159,6 @@
  */
 +(alnullable ALSdk *) sharedWithKey: (alnonnull NSString *) sdkKey settings: (alnonnull ALSdkSettings *) settings;
 
-- (alnullable id) init __attribute__((unavailable("Use [ALSdk shared] instead of alloc-init pattern.")));
+- (alnonnull id) init __attribute__((unavailable("Use [ALSdk shared] instead of alloc-init pattern.")));
 
 @end

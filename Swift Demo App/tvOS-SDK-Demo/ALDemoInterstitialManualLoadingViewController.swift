@@ -12,13 +12,13 @@ class ALDemoInterstitialManualLoadingViewController: ALDemoBaseViewController, A
 {
     var ad: ALAd?
     
-    @IBAction func loadInterstitial(sender: AnyObject!)
+    @IBAction func loadInterstitial(_ sender: AnyObject!)
     {
         self.log("Interstitial loading...")
         ALSdk.shared()!.adService.loadNextAd(ALAdSize.sizeInterstitial(), andNotify: self)
     }
     
-    @IBAction func showInterstitial(sender: AnyObject!)
+    @IBAction func showInterstitial(_ sender: AnyObject!)
     {
         // Optional: Assign delegates
         ALInterstitialAd.shared().adDisplayDelegate = self
@@ -26,22 +26,22 @@ class ALDemoInterstitialManualLoadingViewController: ALDemoBaseViewController, A
         
         if let ad = self.ad
         {
-            ALInterstitialAd.shared().showOver(UIApplication.sharedApplication().keyWindow!, andRender: ad)
+            ALInterstitialAd.shared().showOver(UIApplication.shared.keyWindow!, andRender: ad)
         }
     }
     
     // MARK: Ad Load Delegate
     
-    func adService(adService: ALAdService, didLoadAd ad: ALAd)
+    func adService(_ adService: ALAdService, didLoad ad: ALAd)
     {
         self.log("Interstitial Loaded")
         
         self.ad = ad
-        self.showButton.enabled = true
+        self.showButton.isEnabled = true
         self.requestedFocusView = self.showButton
     }
     
-    func adService(adService: ALAdService, didFailToLoadAdWithError code: Int32)
+    func adService(_ adService: ALAdService, didFailToLoadAdWithError code: Int32)
     {
         // Look at ALErrorCodes.h for list of error codes
         self.log("Interstitial failed to load with error code \(code)")
@@ -49,29 +49,29 @@ class ALDemoInterstitialManualLoadingViewController: ALDemoBaseViewController, A
     
     // MARK: Ad Display Delegate
     
-    func ad(ad: ALAd, wasDisplayedIn view: UIView)
+    func ad(_ ad: ALAd, wasDisplayedIn view: UIView)
     {
         self.log("Interstitial Displayed")
     }
     
-    func ad(ad: ALAd, wasHiddenIn view: UIView)
+    func ad(_ ad: ALAd, wasHiddenIn view: UIView)
     {
         self.log("Interstitial Dismissed")
     }
     
-    func ad(ad: ALAd, wasClickedIn view: UIView)
+    func ad(_ ad: ALAd, wasClickedIn view: UIView)
     {
         self.log("Interstitial Clicked")
     }
     
     // MARK: Ad Video Playback Delegate
     
-    func videoPlaybackBeganInAd(ad: ALAd)
+    func videoPlaybackBegan(in ad: ALAd)
     {
         self.log("Video Started")
     }
     
-    func videoPlaybackEndedInAd(ad: ALAd, atPlaybackPercent percentPlayed: NSNumber, fullyWatched wasFullyWatched: Bool)
+    func videoPlaybackEnded(in ad: ALAd, atPlaybackPercent percentPlayed: NSNumber, fullyWatched wasFullyWatched: Bool)
     {
         self.log("Video Ended")
     }

@@ -58,6 +58,6 @@
  */
 -(void) trackCheckoutWithTransactionIdentifier: (alnullable NSString* const) transactionId parameters: (alnullable NSDictionary*) parameters;
 
-- (alnullable id)init __attribute__((unavailable("Don't instantiate ALEventService, access one via [sdk eventService] instead.")));
+- (alnonnull id)init __attribute__((unavailable("Don't instantiate ALEventService, access one via [sdk eventService] instead.")));
 
 @end

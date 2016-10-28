@@ -206,5 +206,6 @@
  */
 +(alnullable NSString*) userIdentifier;
 
-- (alnullable id) init __attribute__((unavailable("Use [ALIncentivizedInterstitialAd shared] or initWithSdk: instead.")));
+- (alnonnull id) init __attribute__((unavailable("Use [ALIncentivizedInterstitialAd shared] or initWithSdk: instead.")));
+
 @end
