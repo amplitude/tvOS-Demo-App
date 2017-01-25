@@ -8,6 +8,7 @@
 
 #import "ALDemoAppDelegate.h"
 #import "ALSdk.h"
+#import "Amplitude.h"
 
 @implementation ALDemoAppDelegate
 
@@ -21,6 +22,9 @@
     [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     [[UINavigationBar appearance] setTintColor: [UIColor whiteColor]];
 
+    [[Amplitude instance] initializeApiKey:@"5991e74feae44012f071fae1383099e8"];
+    [[Amplitude instance] setTrackingSessionEvents:YES];
+    [[Amplitude instance] setMinTimeBetweenSessionsMillis:5000];
     return YES;
 }
 

@@ -1,0 +1,5 @@
+platform :tvos, '9.0'
+
+target 'tvOS-SDK-Demo-ObjC' do
+    pod 'Amplitude-iOS', :path => '~/sdk/Amplitude-iOS'
+end

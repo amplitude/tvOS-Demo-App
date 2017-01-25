@@ -8,6 +8,7 @@
 
 #import "ALDemoInterstitialSingleInstanceViewController.h"
 #import "ALInterstitialAd.h"
+#import "Amplitude.h"
 
 @interface ALDemoInterstitialSingleInstanceViewController ()<ALAdLoadDelegate, ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 @property (nonatomic, strong) ALInterstitialAd *interstitial;
@@ -20,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [[Amplitude instance] logEvent:@"View Interstitial - Single Instance"];
     self.title = @"Single Instance";
     self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
 }
@@ -29,6 +30,7 @@
 
 - (IBAction)showInterstitial:(id)sender
 {
+    [[Amplitude instance] logEvent:@"Clicked Show Load Adds - Single Instance"];
     if ( [ALInterstitialAd isReadyForDisplay] )
     {
         // Make it a class @property so it doesn't get dealloc'd by ARC

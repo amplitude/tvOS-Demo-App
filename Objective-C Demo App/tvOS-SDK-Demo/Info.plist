@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AppLovinSdkKey</key>
-	<string>YOUR_SDK_KEY</string>
+	<string>test</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

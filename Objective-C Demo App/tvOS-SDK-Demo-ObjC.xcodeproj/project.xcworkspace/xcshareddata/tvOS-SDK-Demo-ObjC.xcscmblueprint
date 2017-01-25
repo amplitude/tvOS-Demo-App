@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "58400D72F891BB06E474ACD7E39EC63D8FC439BD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58400D72F891BB06E474ACD7E39EC63D8FC439BD" : 9223372036854775807,
+    "8B3FCA06773311E05FC662092CB756E83CD1F40F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F3BDEEE0-E4A6-4980-9F34-6F4F91814B7F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "58400D72F891BB06E474ACD7E39EC63D8FC439BD" : "tvOS-Demo-App\/",
+    "8B3FCA06773311E05FC662092CB756E83CD1F40F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tvOS-SDK-Demo-ObjC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Objective-C Demo App\/tvOS-SDK-Demo-ObjC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:amplitude\/tvOS-Demo-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58400D72F891BB06E474ACD7E39EC63D8FC439BD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:amplitude\/Client-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B3FCA06773311E05FC662092CB756E83CD1F40F"
+    }
+  ]
+}
